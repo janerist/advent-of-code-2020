@@ -4,14 +4,16 @@
   (:require [advent-of-code-2020.day02 :as day02])
   (:require [advent-of-code-2020.day03 :as day03])
   (:require [advent-of-code-2020.day04 :as day04])
+  (:require [advent-of-code-2020.day05 :as day05])
   (:gen-class))
 
 (def solvers
   [
-   [day01/solve1 day01/solve2],
-   [day02/solve1 day02/solve2],
-   [day03/solve1 day03/solve2],
+   [day01/solve1 day01/solve2]
+   [day02/solve1 day02/solve2]
+   [day03/solve1 day03/solve2]
    [day04/solve1 day04/solve2]
+   [day05/solve1 day05/solve2]
    ])
 
 (defn- solver-name [solver]
@@ -25,8 +27,8 @@
 
 (defn- solve-day [n]
   (if-let [solver (nth solvers (- n 1) nil)]
-    (doseq [s solver] (run-solver s)))
-    (println "No solvers for day" n))
+    (doseq [s solver] (run-solver s))
+    (println "No solvers for day" n)))
 
 (defn -main
   "I don't do a whole lot ... yet."
