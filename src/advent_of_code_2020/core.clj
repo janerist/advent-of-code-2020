@@ -12,6 +12,7 @@
   (:require [advent-of-code-2020.day10 :as day10])
   (:require [advent-of-code-2020.day11 :as day11])
   (:require [advent-of-code-2020.day12 :as day12])
+  (:require [advent-of-code-2020.day13 :as day13])
   (:gen-class))
 
 (def solvers
@@ -28,6 +29,7 @@
    [day10/solve1 day10/solve2]
    [day11/solve1 day11/solve2]
    [day12/solve1 day12/solve2]
+   [day13/solve1 day13/solve2]
    ])
 
 (defn- solver-name [solver]
